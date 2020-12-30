@@ -1,0 +1,16 @@
+.dashboard {
+    .grid-x {
+        .cell {
+            display: flex;
+            justify-content: center;
+            .c100 {
+                .subtext {
+                    line-height: normal;
+                    font-size: 14px;
+                    width: 100%;
+                    top: 64px;
+                }
+            }
+        }
+    }
+}

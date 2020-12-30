@@ -1,0 +1,55 @@
+.sidebar {
+    width: 75px;
+    .tabs {
+        height: 100vh;
+        background-color: $black;
+        border: none;
+        .tabs-title {
+            transition: 250ms;
+            a {
+                padding: 0;
+                height: 75px;
+                position: relative;
+                span {
+                    font-size: 40px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: rgba($color: #773959, $alpha: 1);
+                    transition: 250ms;
+                }
+            }
+            a[aria-selected='true'] {
+                background-color: transparent;
+                span {
+                    color: $primary1;
+                }
+            }
+            a:hover {
+                background-color: unset;
+                span {
+                    color: rgba($color: $primary1, $alpha: 0.5);
+                    transition: 250ms;
+                }
+            }
+            &.is-active {
+                border-left: $primary1 4px solid;
+                border-right: transparent 4px solid;
+                transition: 250ms;
+            }
+        }
+        .tabs-title:last-child {
+            position: absolute;
+            bottom: 0;
+            width: 75px;
+        }
+    }
+}
+
+.page-content {
+    max-width: calc(100% -75px);
+    max-width: -moz-calc(100% - 75px);
+    max-width: -webkit-calc(100% - 75px);
+    overflow: hidden;
+}
