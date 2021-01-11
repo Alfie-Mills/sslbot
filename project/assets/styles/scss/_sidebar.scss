@@ -2,7 +2,7 @@
     width: 75px;
     .tabs {
         height: 100vh;
-        background-color: $black;
+        background-color: $primary4;
         border: none;
         .tabs-title {
             transition: 250ms;
@@ -16,7 +16,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    color: rgba($color: #773959, $alpha: 1);
+                    color: rgba($color: $primary5, $alpha: 1);
                     transition: 250ms;
                 }
             }
@@ -35,8 +35,8 @@
             }
             &.is-active {
                 border-left: $primary1 4px solid;
-                border-right: transparent 4px solid;
-                transition: 250ms;
+                border-right: $primary4 4px solid;
+                transition: 0ms;
             }
         }
         .tabs-title:last-child {
@@ -52,4 +52,8 @@
     max-width: -moz-calc(100% - 75px);
     max-width: -webkit-calc(100% - 75px);
     overflow: hidden;
+}
+
+.tabs-panel {
+    height: 100vh;
 }

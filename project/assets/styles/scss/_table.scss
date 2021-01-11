@@ -1,0 +1,70 @@
+.tableDiv {
+    input[type=entry] {
+        pointer-events: none;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    input[type=submit] {
+        content: none;
+        font-size: 0;
+        color: transparent;
+        font-size: 24px;
+        border-radius: 30px;
+        border: none;
+        transition: 200ms;
+        font-family: 'Material Icons Round';
+        color: black;
+        background-color: transparent
+    }
+    input[value=delete],
+    input[value=create],
+    input[value=done] {
+        color: $primary1;
+    }
+    input[value=done] {
+        display: none;
+    }
+    th {
+        text-align: left;
+    }
+    tr#one {
+        background-color: $primary2;
+        color: white;
+        &:first-child {
+            border-top-left-radius: 10px;
+        }
+        th:first-child {
+            border-top-left-radius: 10px;
+        }
+        &:last-child {
+            border-top-right-radius: 10px;
+        }
+        th:last-child {
+            border-top-right-radius: 10px;
+            font-size: 0;
+        }
+    }
+    tr#new {
+        transform: translateY(10px);
+        input[type="text"] {
+            margin: 0;
+            height: 32px;
+            background-color: transparent;
+            color: white;
+        }
+    }
+    tbody {
+        border: none;
+        background-color: transparent;
+    }
+    tr:nth-child(odd) {
+        background-color: $primary4;
+    }
+    tr:nth-child(even) {
+        background-color: $primary3;
+    }
+    td:last-child {
+        float: right;
+    }
+}

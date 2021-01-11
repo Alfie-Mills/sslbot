@@ -44,9 +44,8 @@ function get_expiry($url){
     return ceil((strtotime(date('d M Y', $expiry))-time())/60/60/24);
 }
 function get_part($a){
-    global $project_name;
-    include __dir__ . "/" . $project_name . "/parts/" . $a . ".php" ;
-}
+    include $a;
+};
 
 
 function get_head(){

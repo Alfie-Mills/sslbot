@@ -1,0 +1,19 @@
+form#form {
+    max-width: 500px;
+    margin: auto;
+    input {
+        background-color: transparent;
+        color: $primary1;
+        border-radius: 10px;
+        border: $primary4 2px solid;
+    }
+    label {
+        color: $primary2;
+    }
+    h3 {
+        text-align: center;
+    }
+    input[value="Submit"] {
+        margin: auto;
+    }
+}

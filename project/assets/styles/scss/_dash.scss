@@ -14,3 +14,44 @@
         }
     }
 }
+
+body,
+.tabs-content {
+    background-color: $black;
+    border: none;
+    color: white;
+}
+
+.tabs-content.vertical {
+    border: none;
+}
+
+.dash {
+    .author {
+        color: $primary1;
+    }
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 200;
+    }
+    h3 {
+        font-size: 1.25rem;
+        float: left;
+    }
+    h4 {
+        font-size: 1rem;
+        float: right;
+        padding-bottom: 20px;
+    }
+    h5 {
+        font-size: .8rem;
+        padding-top: 50px;
+        font-weight: bold;
+    }
+    .cell {
+        border: white 1px solid;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
